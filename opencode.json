@@ -51,15 +51,16 @@
       "command": ["npx", "-y", "@z_ai/mcp-server"],
       "timeout": 60000,
       "environment": {
-        "Z_AI_API_KEY": "",
+        "Z_AI_API_KEY": "44024d17fed640b39eff9b5c32dbd81a.jeZ15Ik3Mgzm45O0",
         "Z_AI_MODE": "ZAI"
-      }
+      },
+      "enabled": true
     },
     "context7": {
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "headers": {
-        "CONTEXT7_API_KEY": ""
+        "CONTEXT7_API_KEY": "ctx7sk-a4b19982-612c-4482-a4df-742999a22385"
       },
       "enabled": true,
       "timeout": 60000
@@ -72,50 +73,43 @@
     },
     "Ref": {
       "type": "remote",
-      "url": "https://api.ref.tools/mcp?apiKey=ref-",
-      "enabled": false,
+      "url": "https://api.ref.tools/mcp?apiKey=ref-4716d4c64244bf75af55",
+      "enabled": true,
       "timeout": 60000
     },
     "exa": {
       "type": "remote",
       "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,get_code_context_exa,crawling_exa,company_research_exa,linkedin_search_exa,deep_researcher_start,deep_researcher_check",
-      "enabled": false,
+      "enabled": true,
       "timeout": 60000,
       "headers": {
-        "EXA_API_KEY": "{env:EXA_API_KEY}"
+        "EXA_API_KEY": "6c79097b-e143-415b-a92d-a4146c359a11"
       }
     },
-    "supabase": {
-      "type": "remote",
-      "url": "https://mcp.supabase.com/mcp?project_ref=zxyequaeestijzerrcrx&features=docs%2Caccount%2Cdatabase%2Cdebugging%2Cdevelopment%2Cfunctions%2Cbranching%2Cstorage",
-      "enabled": false,
-      "timeout": 60000,
-      "headers": {
-        "Authorization": "Bearer ACCESS_TOKEN"
-      }
-    },
+
     "chrome-devtools": {
       "type": "local",
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
-      "enabled": false,
+      "enabled": true,
       "timeout": 60000
     },
-    "kibo-ui": {
+    "shadcn": {
       "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "mcp-remote",
-        "https://www.kibo-ui.com/api/mcp/mcp"
-      ],
-      "enabled": false,
+      "command": ["npx", "-y", "shadcn@latest", "mcp"],
+      "enabled": true,
+      "timeout": 60000
+    },
+    "nuxt-mcp-dev": {
+      "type": "local",
+      "command": ["npx", "-y", "nuxt-mcp-dev"],
+      "enabled": true,
       "timeout": 60000
     },
     "firecrawl-mcp": {
       "type": "local",
       "command": ["npx", "-y", "firecrawl-mcp"],
       "environment": {
-        "FIRECRAWL_API_KEY": ""
+        "FIRECRAWL_API_KEY": "fc-dafe911de91c447cbc9c05b9fc59fc41"
       },
       "enabled": true,
       "timeout": 60000
@@ -124,9 +118,10 @@
       "type": "local",
       "command": ["npx", "-y", "@morphllm/morphmcp"],
       "environment": {
-        "MORPH_API_KEY": "",
+        "MORPH_API_KEY": "sk-ggn6uLaxhx0y2Za59ZKxSWpR-LhWwcKI6t1IPijiHAW6qsjl",
         "ENABLED_TOOLS": "edit_file,warpgrep_codebase_search"
       },
+      "enabled": true,
       "timeout": 60000
     }
   },

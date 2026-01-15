@@ -9,7 +9,7 @@ Professional OpenCode project configuration with agents, skills, context system,
 - **Context System**: Hierarchical context files for development, UI, content creation, and more
 - **Custom Commands**: 25+ slash commands for brainstorming, debugging, planning, SEO, and more
 - **Skill Framework**: 20+ skills including code-review, frontend-design, UI animation, backend-dev, and browser automation
-- **MCP Integrations**: Next.js DevTools, Exa AI, Ref documentation, Supabase, Context7, Firecrawl
+- **MCP Integrations**: Next.js DevTools, Exa AI, Ref documentation, Context7, Firecrawl
 
 ## Setup
 
@@ -26,8 +26,6 @@ Create a `.env` file or set these environment variables:
 | `CONTEXT7_API_KEY`      | Context7 MCP API key       |
 | `REF_API_KEY`           | Ref documentation API key  |
 | `EXA_API_KEY`           | Exa AI search API key      |
-| `SUPABASE_PROJECT_REF`  | Supabase project reference |
-| `SUPABASE_ACCESS_TOKEN` | Supabase access token      |
 
 ## Project Structure
 
