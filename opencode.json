@@ -123,6 +123,18 @@
       },
       "enabled": true,
       "timeout": 60000
+    },
+    "n8n": {
+      "type": "local",
+      "command": ["npx", "-y", "@pagelines/n8n-mcp"],
+      "environment": {
+        "N8N_API_URL": "https://n8n.fonti.dev",
+        "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNzRkZGVhNy0zNjg4LTRjN2ItOTA0MS02NzQ0Y2VjYTI1NzQiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzY4NDg4NDk1fQ.0WA0KJ48ZDYwy-yNl_q_sOj8BwaGl3bON3Z-_rZbQk0",
+        "N8N_MCP_VERSIONS": "true",
+        "N8N_MCP_MAX_VERSIONS": "20"
+      },
+      "enabled": true,
+      "timeout": 60000
     }
   },
   "provider": {
